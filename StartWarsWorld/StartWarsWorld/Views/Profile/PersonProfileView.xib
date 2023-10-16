@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonProfileView" customModule="StartWarsWorld" customModuleProvider="target">
+            <connections>
+                <outlet property="dobLabel" destination="SG9-4a-kZL" id="6Dh-bD-Bbc"/>
+                <outlet property="nameLabel" destination="hsR-cV-Hqf" id="cW1-Ix-R7a"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oQy-4a-0Eg">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="276"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6Yg-JV-yKf">
+                    <rect key="frame" x="10" y="59" width="259" height="168"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="alP-7j-Rgi">
+                            <rect key="frame" x="79.666666666666686" y="-2.3333333333333357" width="100" height="105.33333333333334"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="jX0-XN-dkq"/>
+                                <constraint firstAttribute="height" constant="100" id="mMu-WH-mfU"/>
+                            </constraints>
+                            <imageReference key="image" image="person.circle" catalog="system" symbolScale="large"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Luke Skywalker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsR-cV-Hqf">
+                            <rect key="frame" x="70.666666666666686" y="108" width="118" height="31.666666666666657"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="AccentColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Born: 19BBY, Sex: Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SG9-4a-kZL">
+                            <rect key="frame" x="41.666666666666671" y="147.66666666666666" width="175.66666666666663" height="20.333333333333343"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ENz-a6-wCD"/>
+            <color key="backgroundColor" red="0.61270349930000001" green="0.71861706059999997" blue="0.71188435640000003" alpha="0.86181972790000005" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="6Yg-JV-yKf" firstAttribute="leading" secondItem="ENz-a6-wCD" secondAttribute="leading" constant="10" id="6XR-Wg-MlZ"/>
+                <constraint firstItem="ENz-a6-wCD" firstAttribute="trailing" secondItem="6Yg-JV-yKf" secondAttribute="trailing" constant="10" id="VKO-YK-mug"/>
+                <constraint firstItem="ENz-a6-wCD" firstAttribute="bottom" secondItem="6Yg-JV-yKf" secondAttribute="bottom" constant="15" id="Z3g-TG-PRT"/>
+                <constraint firstItem="ENz-a6-wCD" firstAttribute="top" secondItem="6Yg-JV-yKf" secondAttribute="top" id="xdY-gy-mDd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="6.8702290076335872" y="91.549295774647888"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

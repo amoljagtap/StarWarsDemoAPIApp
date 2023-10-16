@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ApplicationErrorViewController" customModule="StartWarsWorld" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLabel" destination="XbX-nM-QSJ" id="kNy-0t-Jex"/>
+                <outlet property="retryButton" destination="PXi-ad-cHl" id="EWb-bg-fii"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="G5D-fa-Ts7">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbX-nM-QSJ">
+                    <rect key="frame" x="10" y="429" width="373" height="19.333333333333314"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXi-ad-cHl">
+                    <rect key="frame" x="164" y="453.33333333333331" width="65" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Retry"/>
+                    <connections>
+                        <action selector="retryButtonAction:" destination="-1" eventType="touchUpInside" id="qKa-Ot-u6G"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="uLC-Xl-BKK"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PXi-ad-cHl" firstAttribute="top" secondItem="XbX-nM-QSJ" secondAttribute="bottom" constant="5" id="3eo-z9-aVA"/>
+                <constraint firstItem="uLC-Xl-BKK" firstAttribute="trailing" secondItem="XbX-nM-QSJ" secondAttribute="trailing" constant="10" id="7YZ-Nd-E5S"/>
+                <constraint firstItem="XbX-nM-QSJ" firstAttribute="centerX" secondItem="uLC-Xl-BKK" secondAttribute="centerX" id="dRf-I0-DPo"/>
+                <constraint firstItem="XbX-nM-QSJ" firstAttribute="centerY" secondItem="uLC-Xl-BKK" secondAttribute="centerY" id="ejq-CZ-Ed5"/>
+                <constraint firstItem="XbX-nM-QSJ" firstAttribute="leading" secondItem="uLC-Xl-BKK" secondAttribute="leading" constant="10" id="jlx-NG-z9X"/>
+                <constraint firstItem="PXi-ad-cHl" firstAttribute="centerX" secondItem="uLC-Xl-BKK" secondAttribute="centerX" id="nne-GR-NH7"/>
+            </constraints>
+            <point key="canvasLocation" x="120" y="-1"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
